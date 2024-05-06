@@ -1,20 +1,49 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
-/*import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
-import Products from './pages/products/Products';*/
+import About from './pages/about/About'
+import Products from './pages/products/Products'
+import Contact from './pages/contact/Contact'
+import Sidebar from './components/sidebar/Sidebar';
+
 
 const App = () => {
-  return (
-    <Header />
-  )
-}
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+  const toggleSideBar = () => {
+    setSideBarOpen(!sideBarOpen);
+  }
+
+  const closeSideBar = () => {
+    setSideBarOpen(false);
+  };
+
+
+  return (
+    <div>
+      <Header onMenuClick={toggleSideBar} />
+      <div>
+        <Sidebar isOpen={sideBarOpen} onClose={closeSideBar} />
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
-)
+  document.getElementById('root')
+);
