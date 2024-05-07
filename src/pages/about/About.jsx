@@ -1,8 +1,9 @@
 import React from "react";
+import './styles.css'
 
 const About = () => {
     return (
-        <div>About</div>
+        <div className="about-style">About</div>
     )
 }
 export default About
