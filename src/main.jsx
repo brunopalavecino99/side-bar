@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import About from './pages/about/About'
 import Products from './pages/products/Products'
 import Contact from './pages/contact/Contact'
 import Sidebar from './components/sidebar/Sidebar';
+import "./index.css";
 
 
 const App = () => {
@@ -16,16 +18,12 @@ const App = () => {
     setSideBarOpen(!sideBarOpen);
   }
 
-  const closeSideBar = () => {
-    setSideBarOpen(false);
-  };
-
 
   return (
-    <div>
-      <Header onMenuClick={toggleSideBar} />
-      <div>
-        <Sidebar isOpen={sideBarOpen} onClose={closeSideBar} />
+    <div className='layout'>
+      <Sidebar isOpen={ sideBarOpen } onClose={ toggleSideBar } />
+      <div className='content'>
+        <Header onMenuClick={ toggleSideBar } />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,6 +32,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer/>
       </div>
     </div>
   );
