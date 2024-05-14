@@ -1,3 +1,37 @@
+p {
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 20px;
+
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #212121;
+    line-height: 1.4;
+}
+
+li::marker {
+    color: #0D6CCD;
+}
+
+ul {
+    margin: auto;
+    padding: 0 15px 15px 23px;
+}
+
+li {
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+
+}
+
 .home-style {
     width: 100%;
     height: 100%;
@@ -9,15 +43,72 @@
     right: 0;
 }
 
-.image{
+.image {
     display: flex;
     width: 100%;
 }
-.image2{
+
+.image2 {
     display: flex;
     width: 100%;
 }
-.image3{
+
+.image3 {
     display: flex;
     width: 100%;
+}
+
+.text-h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.text-h3 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #424242;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.first-content {
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.second-content {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+
+.icons-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.icons-content>*+* {
+    margin-left: 10px;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.black {
+    color: black;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
 }
