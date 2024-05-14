@@ -3,7 +3,7 @@ import './styles.css'
 
 const Products = () => {
     return (
-        <div className="products-style">Products</div>
+        <div className="products-style"></div>
     )
 }
 export default Products

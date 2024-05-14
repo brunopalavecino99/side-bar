@@ -1,54 +1,111 @@
 .footer-back {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    background-color: #000821;
-    position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #000821;
+  position: relative;
 }
 
 .footer-logo {
-    width: 51px;
-    height: 24px;
+  width: 51px;
+  height: 24px;
 }
 
 .footer-content {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-top {
-    display: flex;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 
 .redirects-content {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 70%;
-    margin-top: 20px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .redirects-sections {
-    display: flex;
-    width: 200px;
-    height: 100%;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .redirects-sitioA {
-    display: flex;
-    width: 200px;
-    height: 100%;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.blue-line {
+  border-bottom: 4px solid #0d6ccd;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.content-ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  padding-left: 0;
+
+  &.ul-top {
+    > li {
+        margin-bottom: 14px;
+        > a {
+      color: white;
+      margin-top: 16px;
+      font-family: "Inter", sans-serif;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+}
+
+  &.ul-bottom {
+    > li {
+      margin-bottom: 20px;
+      > a {
+        font-family: "Inter", sans-serif;
+        color: #6fcafa;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 23px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.app-footer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  color: white;
+  margin-left: 23px;
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  margin-bottom: 60px;
 }
