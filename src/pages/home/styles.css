@@ -30,17 +30,6 @@ ul {
   color: #424242;
 }
 
-.home-style {
-  width: 100%;
-  height: 100%;
-  font-weight: 700;
-  font-size: 150px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  right: 0;
-}
-
 .image {
   display: flex;
   width: 100%;
@@ -87,7 +76,7 @@ ul {
   margin-top: 10px;
 }
 
-.icons-content > * + * {
+.icons-content>*+* {
   margin-left: 10px;
 }
 
@@ -111,4 +100,35 @@ ul {
 
 .bolder {
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+  /* Aquí van los estilos que se aplicarán cuando el ancho de la ventana sea mayor a 768px */
+  p,
+  figcaption,
+  .text-h3 {
+    font-size: 24px;
+    /* Aumentar el tamaño del texto */
+  }
+
+  .text-h1 {
+    font-size: 48px;
+  }
+
+
+
+  .icons-content {
+    margin-top: 20px;
+    /* Aumentar el espaciado entre los iconos */
+  }
+
+  .container {
+    padding-left: 250px;
+    width: 60%;
+    /* Ancho del contenedor principal */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+  }
+
 }
