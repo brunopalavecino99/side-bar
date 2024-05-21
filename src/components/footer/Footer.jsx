@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 import tn from "../../imgs/TN.webp";
+import AppStore from "../../assets/icons/appstore";
+import PlayStore from "../../assets/icons/playstore";
 
 const Footer = () => {
   return (
@@ -40,7 +42,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="app-footer">Descargate la app de TN</div>
+        <div className="app-footer">Descargate la app de TN
+        <div className="content-svgs">
+        <AppStore width={30} height={30} className='icons-footer'/>
+        <PlayStore width={30} height={30} className='icons-footer' />
+        </div>
+        </div>
         <div className="footer-bottom">
             <ul className="content-ul ul-bottom">
                 <li><a href="">Mapa del sitio</a></li>

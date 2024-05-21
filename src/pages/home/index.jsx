@@ -24,7 +24,7 @@ const Home = () => {
             No solo por los negocios gastronomicos, la arquitectura y otros
             detalles lo convierten en "peculiar"
           </h3>
-          <ul>
+          <ul className="ul-date">
             <li className="li-fecha" key={"fecha"}>08 de mayo 2024, 23:27hs</li>
           </ul>
         </div>

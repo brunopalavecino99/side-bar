@@ -7,15 +7,16 @@
     position: fixed;
     top: 0;
     left: -100%;
+    padding-top: 60px;
     /* Ocultar completamente el sidebar por defecto */
     transition: left 0.5s;
     /* Usar una transición en la propiedad left */
 }
 
 /* Estilos adicionales para dispositivos de escritorio */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .sidebar {
-        width: 250px;
+        width: 25%;
         /* Ancho fijo del sidebar */
         left: 0;
         /* Alinear el sidebar a la izquierda en dispositivos de escritorio */
@@ -27,14 +28,6 @@
 .sidebar.open {
     left: 0;
     /* Mostrar el sidebar cuando está abierto cambiando la propiedad left a 0 */
-}
-
-.sidebar-top {
-    display: flex;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    position: relative;
 }
 
 .sidebar ul {
@@ -59,22 +52,6 @@
 
 .sidebar ul li a:hover {
     color: #ccc;
-}
-
-.sidebar-content {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.close-button {
-    position: absolute;
-    left: 260px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1;
-    margin-top: 80px;
 }
 
 .text-h2 {

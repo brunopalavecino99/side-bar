@@ -1,21 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import tn from "../../imgs/TN.webp";
 
-const Sidebar = ({ isOpen, onClose }) => {
-  const handleClose = () => {
-    onClose();
-  };
+const Sidebar = ({ isOpen }) => {
 
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <div className="sidebar-top">
-        <div className="sidebar-content">
-          <img src={tn} alt="logoTN" className="logo-tn" />
-        </div>
-        <button className="close-button" onClick={handleClose}>X</button>
-      </div>
       <h2 className="text-h2">Secciones</h2>
       <div className="blue-line-sidebar"></div>
       <ul>

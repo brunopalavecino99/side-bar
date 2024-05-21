@@ -30,3 +30,9 @@ header {
     width: 51px;
     height: 24px;
 }
+
+@media (min-width: 900px) {
+    .icon-menu {
+        display: none;
+    }
+}

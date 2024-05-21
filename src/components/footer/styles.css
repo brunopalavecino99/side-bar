@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   background-color: #000821;
-  position: relative;
 }
 
 .footer-logo {
@@ -12,6 +11,7 @@
 
 .footer-content {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-top {
@@ -61,8 +61,6 @@
 }
 
 .content-ul {
-  width: 100%;
-  height: 100%;
   list-style-type: none;
   padding-left: 0;
 
@@ -98,14 +96,51 @@
 
 .app-footer {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   height: 40px;
   color: white;
-  margin-left: 23px;
-  margin-top: 60px;
+  padding-left: 23px;
+  padding-top: 30px;
   font-size: 16px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  align-items: center;
-  margin-bottom: 60px;
+  align-items: baseline;
+  padding-bottom: 60px;
 }
+
+.content-svgs{
+  display: flex;
+  padding-top: 15px;
+}
+
+.content-svgs>*+* {
+  margin-left: 20px;
+}
+
+.icons-footer{
+  cursor: pointer;
+}
+
+.footer-bottom {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .redirects-sections{
+    width: 400px;
+    font-size: 24px;
+  }
+  .ul-top{
+    margin: 0;
+    font-size: 20px;
+  }
+  .redirects-sitioA{
+    width: 400px;
+    font-size: 24px;
+  }
+  }
+
+  ul{
+    margin: 0;
+  }
+

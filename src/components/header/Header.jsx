@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import SvgComponent from "../icons/icon.jsx";
+import SvgComponent from "../../assets/icons/icon.jsx";
 import tn from "../../imgs/TN.webp";
 
 const Header = ({ onMenuClick }) => {
@@ -14,4 +14,4 @@ const Header = ({ onMenuClick }) => {
     )
 }
 
-export default Header
+export default Header;

@@ -19,7 +19,7 @@ li::marker {
   color: #0d6ccd;
 }
 
-ul {
+.ul-date {
   margin: auto;
   padding: 0 15px 15px 23px;
 }
@@ -102,7 +102,7 @@ ul {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
   /* Aquí van los estilos que se aplicarán cuando el ancho de la ventana sea mayor a 768px */
   p,
@@ -124,7 +124,6 @@ ul {
   }
 
   .container {
-    padding-left: 250px;
     width: 60%;
     /* Ancho del contenedor principal */
     margin: 0 auto;
